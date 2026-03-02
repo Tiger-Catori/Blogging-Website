@@ -1,0 +1,33 @@
+{% extends 'base.html'%} {% block content%}
+
+<div class="about__section">
+    <div class="about__container">
+        <div class="about__text">
+            <h2>About this Blog.</h2>
+            <p>
+                This blog is a collection of thoughts, experiences, questions,
+                and curiosities. I write about whatever moves me — from everyday
+                observations to bigger ideas about life.
+            </p>
+            <p>
+                This is my corner of the internet where I write about whatever’s
+                on my mind. Some days it’s deep thoughts. Some days it’s random
+                opinions. Other days it’s things I’m learning, loving, or
+                questioning.
+            </p>
+            <p>There’s no strict theme or niche here. Just exploration.</p>
+            <p>
+                If you enjoy thinking out loud, reflecting on the ordinary, and
+                finding meaning in small things, you’re in the right place.
+            </p>
+        </div>
+        <div class="about__image">
+            <img
+                src="{{ url_for('static', filename='assets/images/IMG_1711.webp') }}"
+                class="about__img"
+            />
+        </div>
+    </div>
+</div>
+
+{% endblock %}

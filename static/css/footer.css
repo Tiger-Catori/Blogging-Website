@@ -1,0 +1,26 @@
+/* Footer Styles  */
+/*.footer__section {
+    positon:;
+}*/
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__box ul {
+    list-style: none;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
