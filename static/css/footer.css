@@ -1,17 +1,38 @@
-/* Footer Styles  */
-/*.footer__section {
-    positon:;
-}*/
+.footer__section {
+    position: relative;
+    margin-top: auto;
+    padding: 2rem 0.6rem;
+    border-top: 2px solid #111;
+
+    color: var(--dark-color);
+    font-weight: var(--fw-semibold);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* background extension */
+.footer__section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+/* FOOTER LAYOUT */
 
 .footer__container {
     display: flex;
     flex-direction: column;
-    row-gap: 4rem;
+    gap: 4rem;
+    text-align: center;
 }
 
 .footer__box {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -20,7 +41,81 @@
     list-style: none;
 }
 
+/* SITEMAP LINKS */
+
+.nav__links-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.footer__sitemap li {
+    position: relative;
+}
+
+.footer__sitemap a {
+    text-decoration: none;
+    color: var(--dark-color);
+    position: relative;
+}
+
+/* arrow animation */
+.footer__sitemap a::before {
+    content: "→";
+    position: absolute;
+    left: -3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.footer__sitemap a:hover::before {
+    opacity: 1;
+    left: -4rem;
+}
+
+/* SOCIAL ICONS */
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem 0;
+}
+
+.social-list__item {
+    flex: 0 0 50%; /* 2 columns */
+}
+
+.footer__socials a {
+    display: inline-block;
+    padding: 1rem;
+
+    font-size: var(--fs-h2);
+    color: var(--dark-color);
+
+    transition: opacity 0.2s ease;
+}
+
+.footer__socials a:hover {
+    opacity: -1;
+}
+
+/* FOOTER BOTTOM */
+
 .footer__bottom {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 2.4rem;
+    border-top: 2px solid #111;
+}
+
+.footer__bottom a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.2s ease;
+}
+
+.footer__bottom a:hover {
+    text-decoration: underline;
 }

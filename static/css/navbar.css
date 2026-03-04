@@ -1,43 +1,98 @@
+/* NAVBAR */
+
 .nav__section {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: center;
+
+    background: #fff;
+    border-bottom: 2px solid #111;
     margin-bottom: 3.2rem;
-    /*border: 1px solid #111;*/
 }
+
+/* CONTAINER */
 
 .nav__container {
+    width: 100%;
+    /*max-width: 120rem;*/
+
     display: flex;
-    /*width: 100%;*/
+    justify-content: center;
 }
 
-.nav__links {
-    border: 2px solid #111;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    width: 100vw;
-    padding: 2rem 0;
-    font-size: var(--fs-h3);
+.nav__logo-box {
+    display: none;
 }
+
+.nav__links-box {
+    display: flex;
+    width: 100%;
+    /*justify-content: space-evenly;*/
+}
+
+/* LINKS */
+.nav__links {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around;*/
+    justify-content: space-evenly;
+    width: inherit;
+
+    list-style: none;
+    padding: 1.2rem 0;
+
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-semi-bold);
+}
+
+/* NAV ITEM */
 
 .nav__link {
-    display: inline-block;
-    justify-content: center;
-    font-size: var(--fs-h3);
-    font-weight: bold;
-    background-color: var(--back-color);
-    cursor: pointer;
-    color: #111;
+    position: relative;
+
+    display: flex;
+    /*justify-content: center;*/
+
     padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+
+    font-weight: var(--fw-semibold);
+    background: var(--back-color);
+    color: #111;
+
+    cursor: pointer;
 }
 
-.nav__link:hover {
-    background-color: var(--dark-color);
-    color: #fff;
-}
+/* LINK */
 
 .nav__link a {
     text-decoration: none;
     color: inherit;
-    padding:;
+}
+
+/* ANIMATED UNDERLINE */
+
+.nav__link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+
+    width: 100%;
+    height: 2px;
+
+    background: #111;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.35s ease;
+}
+
+.nav__link:hover::after {
+    transform: scaleX(1);
 }
