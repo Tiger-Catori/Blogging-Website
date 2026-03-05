@@ -1,7 +1,39 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="contact__section">
-    <div class="contact__container"></div>
+    <div class="contact__container">
+        <div class="contact__box">
+            <h2 class="contact__heading">Contact Details</h2>
+            <ul class="contact__list">
+                <li class="contact__item">
+                    <a
+                        href="mailto:michaeladeleye365@gmail.com"
+                        class="contact__link"
+                        ><i class="fa fa-envelope"></i
+                        ><span>michaeladeleye365@gmail.com<span></a
+                    >
+                </li>
+                <li class="contact__item">
+                    <a href="tel:07389194089" class="contact__link"
+                        ><i class="fa fa-phone"></i><span>+44 (0) 7389 194 089</span></a
+                    >
+                </li>
+                <li class="contact__item">
+                    <a class="contact__link"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="maps__box">
+            <h2>Our Location</h2>
+            <iframe
+                class="google__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.645968475703!2d-0.14446492291441032!3d51.50136397181196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2suk!4v1772745696888!5m2!1sen!2suk"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            />
+        </div>
+    </div>
 </div>
 
 {% endblock %}

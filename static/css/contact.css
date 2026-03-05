@@ -1,0 +1,52 @@
+.contact__section {
+    display: flex;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 4.8rem;
+}
+
+.contact__container h2 {
+    font-size: var(--fs-h1);
+    margin-bottom: 1rem;
+    font-weight: var(--fw-semibold);
+}
+
+.contact__box {
+    flex: 0 0 50%;
+}
+
+.map__box {
+    flex: 0 0 50%;
+}
+
+.contact__list {
+    list-style: none;
+}
+.contact__item {
+    display: flex;
+    align-items: center;
+}
+
+.contact__link {
+    display: flex;
+    align-items: center;
+    color: var(--dark-color);
+    text-decoration: none;
+    column-gap: 3rem;
+}
+
+.contact__link:hover span {
+    text-decoration: underline;
+}
+
+.google__map {
+    outline: none;
+    width: 60rem;
+    /*width: 100%;*/
+    aspect-ratio: 16 / 9;
+    /*aspect-ratio: 9 / 16;*/
+}

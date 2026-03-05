@@ -1,7 +1,7 @@
 .footer__section {
     position: relative;
     margin-top: auto;
-    padding: 2rem 0.6rem;
+    padding: 2rem 0;
     border-top: 2px solid #111;
 
     color: var(--dark-color);
@@ -109,6 +109,7 @@
     justify-content: space-evenly;
     padding-top: 2.4rem;
     border-top: 2px solid #111;
+    margin-top: -2rem;
 }
 
 .footer__bottom a {
