@@ -31,7 +31,6 @@
             <nav class="nav__section">
                 <!-- nav markup -->
                 <div class="nav__container">
-                    <div class="nav__logo-box"></div>
                     <div class="nav__links-box">
                         <ul class="nav__links">
                             <li class="nav__link">
@@ -41,9 +40,21 @@
                                 <a href="{{url_for('about')}}">About</a>
                             </li>
                             <li class="nav__link">
+                                <a href="{{url_for('article')}}">Article</a>
+                            </li>
+                            <li class="nav__link">
                                 <a href="{{url_for('contact')}}">Contact</a>
                             </li>
+
                         </ul>
+                    </div>
+                    <div class="nav__search-box">
+                        <input
+                            class="search"
+                            type="search"
+                            placeholder="Search..."
+                        />
+                        <button class="fa fa-search">
                     </div>
                 </div>
             </nav>
@@ -62,8 +73,12 @@
                                     <a href="{{url_for('about')}}">About</a>
                                 </li>
                                 <li>
+                                    <a href="{{url_for('article')}}">Article</a>
+                                </li>
+                                <li>
                                     <a href="{{url_for('contact')}}">Contact</a>
                                 </li>
+
                             </ul>
                         </div>
                         <div class="footer__socials">

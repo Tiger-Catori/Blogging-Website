@@ -4,15 +4,28 @@
 
 .about__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /*column-gap: 10%;*/
+    justify-content: space-between;
+}
+
+.about__text,
+.about__image {
+    flex: 0 0 50%;
 }
 
 .about__image {
+    /*max-height: 376px;*/
     max-width: 376px;
+    /*align-items: center;*/
+    /*height: 80%;*/
 }
 
 .about__img {
     height: auto;
     width: 100%;
     border-radius: 12px;
+    aspect-ratio: 2 / 3;
 }

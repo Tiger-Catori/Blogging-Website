@@ -12,6 +12,10 @@ def home():
 def about():
     return render_template('about.html', current_year=datetime.now().year)
 
+@app.route('/article')
+def article():
+    return render_template('article.html', current_year=datetime.now().year)
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html', current_year=datetime.now().year)
