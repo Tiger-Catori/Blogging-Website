@@ -9,12 +9,12 @@
     box-sizing: border-box;
     max-width: 130rem;
     margin: auto;
-    margin-top: 170rem;
+    /*margin-top: 170rem;*/
 }
 
-.privacy2 {
+/*.privacy2 {
     margin-top: 145rem;
-}
+}*/
 
 /* Styling for headings and paragraphs to make content look clean */
 .privacy-policy-container h2 {
