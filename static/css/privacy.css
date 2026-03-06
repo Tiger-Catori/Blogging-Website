@@ -8,20 +8,25 @@
     padding: 2rem;
     box-sizing: border-box;
     max-width: 130rem;
-    margin: 200rem auto 4rem;
+    margin: auto;
+    margin-top: 170rem;
+}
+
+.privacy2 {
+    margin-top: 145rem;
 }
 
 /* Styling for headings and paragraphs to make content look clean */
 .privacy-policy-container h2 {
     margin-top: 1.5rem;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h2);
 }
 
 .privacy-policy-container h4 {
     margin-top: 1.5rem;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
 }
 
 .privacy-policy-container p,

@@ -12,7 +12,7 @@
 }
 
 .heading {
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h2);
     margin-bottom: 1rem;
     font-weight: var(--fw-semibold);
 }
@@ -39,10 +39,14 @@
     color: var(--dark-color);
     text-decoration: none;
     column-gap: 3rem;
+    transition: 0.3s ease-in-out;
 }
 
 .contact__link:hover span {
     text-decoration: underline;
+}
+.contact__link:hover {
+    margin-left: 2rem;
 }
 
 .google__map {

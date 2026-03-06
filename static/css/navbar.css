@@ -10,7 +10,6 @@
 
     background: #fff;
     border-bottom: 2px solid #111;
-    margin-bottom: 3.2rem;
     height: 7rem;
 }
 
@@ -45,7 +44,7 @@
     border: 2px solid #111;
     border-radius: 4px 0 0 4px; /* round left side only */
     padding: 0 1rem;
-    font-size: var(--fs-h4);
+    font-size: var(--fs-body);
     color: var(--dark-color);
 }
 
@@ -88,7 +87,7 @@
     list-style: none;
     padding: 1.2rem 0;
 
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h4);
     font-weight: var(--fw-semi-bold);
 }
 
