@@ -1,15 +1,17 @@
 .contact__section {
     display: flex;
+    /*min-height: 100%;*/
 }
 
 .contact__container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 4.8rem;
+    /*flex-wrap: wrap;*/
+    /*row-gap: 4.8rem;*/
+    width: 100%;
 }
 
-.contact__container h2 {
+.heading {
     font-size: var(--fs-h1);
     margin-bottom: 1rem;
     font-weight: var(--fw-semibold);
@@ -19,7 +21,7 @@
     flex: 0 0 50%;
 }
 
-.map__box {
+.maps__box {
     flex: 0 0 50%;
 }
 
@@ -44,9 +46,10 @@
 }
 
 .google__map {
-    outline: none;
+    border: none;
     width: 60rem;
     /*width: 100%;*/
     aspect-ratio: 16 / 9;
+    border-radius: 8px;
     /*aspect-ratio: 9 / 16;*/
 }

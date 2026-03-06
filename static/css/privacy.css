@@ -1,0 +1,44 @@
+/* PrivacyPolicy.css */
+
+/* This styles the root container of the privacy policy page */
+.privacy-policy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    max-width: 130rem;
+    margin: 200rem auto 4rem;
+}
+
+/* Styling for headings and paragraphs to make content look clean */
+.privacy-policy-container h2 {
+    margin-top: 1.5rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h1);
+}
+
+.privacy-policy-container h4 {
+    margin-top: 1.5rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h2);
+}
+
+.privacy-policy-container p,
+.privacy-policy-container ul {
+    margin-top: 1rem;
+    line-height: 1.6;
+    text-align: left; /* body text left-aligned for readability */
+}
+
+/* Optional: style lists */
+.privacy-policy-container ul {
+    padding-left: 1.5rem;
+}
+
+/* If you want smaller screen tweaks */
+@media (max-width: 600px) {
+    .privacy-policy-container {
+        padding: 1rem;
+    }
+}
