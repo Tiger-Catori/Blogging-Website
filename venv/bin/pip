@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/duro/Documents/Coding Projects/PythonProjects/Blogging Website/venv/bin/python3" "$0" "$@"
+'''exec' "/home/duro/Documents/Coding Projects/BloggingWebsite/Blogging-Website/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

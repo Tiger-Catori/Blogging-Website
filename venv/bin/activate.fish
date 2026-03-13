@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV '/home/duro/Documents/Coding Projects/PythonProjects/Blogging Website/venv'
+set -gx VIRTUAL_ENV '/home/duro/Documents/Coding Projects/BloggingWebsite/Blogging-Website/venv'
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

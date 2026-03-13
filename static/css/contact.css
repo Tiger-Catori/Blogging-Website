@@ -18,11 +18,11 @@
 }
 
 .contact__box {
-    flex: 0 0 50%;
+    flex: 0 0 40%;
 }
 
 .maps__box {
-    flex: 0 0 50%;
+    flex: 0 0 60%;
 }
 
 .contact__list {
@@ -51,8 +51,8 @@
 
 .google__map {
     border: none;
-    width: 60rem;
-    /*width: 100%;*/
+    /*width: 60rem;*/
+    width: 100%;
     aspect-ratio: 16 / 9;
     border-radius: 8px;
     /*aspect-ratio: 9 / 16;*/
