@@ -1,11 +1,45 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% block title %} Articles {% endblock %} {% block
+content %}
 <div class="article__section">
     <div class="article__container">
-        <div class="article__card">
-            <h3 class="card__heading">My First Blog.</h3>
-            <p>Lorem ipsum</p>
-            <a class="card__link">Read More...</a>
-        </div>
+        <h2 class="heading">Articles</h2>
+
+        {% for article in articles %}
+        <article class="article__card">
+            <header class="article__header">
+                <h3 class="article__title">
+                    <a
+                        href="{{ url_for('single_article', slug=article.slug) }}"
+                    >
+                        {{ article.title }}
+                    </a>
+                </h3>
+
+                <div class="article__meta">
+                    <span class="article__date">
+                        {{ article.date.strftime("%d %B %Y") }}
+                    </span>
+
+                    <span class="article__author"> {{ article.author }} </span>
+                </div>
+
+                <div class="article__categories">
+                    {% for category in article.categories %}
+                    <span class="category">{{ category }}</span>
+                    {% endfor %}
+                </div>
+            </header>
+
+            <p class="article__summary">{{ article.summary }}</p>
+
+            <a
+                class="readmore"
+                href="{{ url_for('single_article', slug=article.slug) }}"
+            >
+                Read more →
+            </a>
+        </article>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

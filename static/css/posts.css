@@ -1,0 +1,104 @@
+/* ===============================
+   BLOG POST PAGE
+================================ */
+
+.article__section {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background: #ffffff;
+}
+
+/* Main article container */
+.article__container {
+    max-width: 100rem;
+    width: 100%;
+    line-height: 1.7;
+    row-gap: 4.8rem;
+}
+
+/* Article title */
+.heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #111;
+}
+
+/* Date styling */
+.article__date {
+    font-size: 1.4rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+/* Main content */
+.article__content {
+    font-size: 1.7rem;
+    color: #222;
+}
+
+/* Paragraph spacing */
+.article__content p {
+    margin-bottom: 1.6rem;
+}
+
+/* Headings inside article */
+.article__content h2 {
+    font-size: 2.2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.article__content h3 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Lists */
+.article__content ul,
+.article__content ol {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Links */
+.article__content a {
+    color: #2d6cdf;
+    text-decoration: none;
+}
+
+.article__content a:hover {
+    text-decoration: underline;
+}
+
+/* Blockquotes */
+.article__content blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 1rem;
+    margin: 2rem 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* Code blocks */
+.article__content code {
+    background: #f4f4f4;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.article__content pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 6px;
+}
+
+/* Images */
+.article__content img {
+    max-width: 100%;
+    margin: 2rem 0;
+    border-radius: 6px;
+}
