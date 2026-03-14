@@ -11,7 +11,8 @@
 
 /* Main article container */
 .article__container {
-    max-width: 100rem;
+    /*max-width: 130rem;*/
+    max-width: 150rem;
     width: 100%;
     line-height: 1.7;
     row-gap: 4.8rem;

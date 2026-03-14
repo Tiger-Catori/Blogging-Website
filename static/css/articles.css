@@ -8,9 +8,9 @@
 
 .article__card {
     padding: 1.6rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: var(--back-color);
 
     transition: all 0.2s ease;
 }
