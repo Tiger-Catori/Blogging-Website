@@ -21,7 +21,7 @@
 /* Article title */
 .heading {
     font-size: var(--fs-h2);
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     margin-bottom: 1rem;
     color: #111;
 }
